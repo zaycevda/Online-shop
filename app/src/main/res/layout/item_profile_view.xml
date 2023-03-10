@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:parentTag="android.widget.RelativeLayout">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/gray3"
+        tools:src="@drawable/ic_card"
+        app:borderWidth="0dp"
+        app:elevation="0dp" />
+
+    <TextView
+        android:id="@+id/profile_title"
+        style="@style/ProfileItemViewTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/icon"
+        tools:text="Trade store" />
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/ic_arrow_right" />
+
+    <TextView
+        android:id="@+id/cash"
+        style="@style/ProfileItemViewTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        tools:text="$ 1593" />
+
+</merge>

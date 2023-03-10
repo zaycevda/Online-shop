@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.presentation.page_1.Page1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="@color/gray1"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:src="@drawable/ic_menu" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/NavigationTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:text="@string/trade_by_bata" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="47dp"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/satria_adhi_pradana"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:strokeColor="@color/gray16"
+                    app:strokeWidth="1dp" />
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <Spinner
+            style="@style/SpinnerTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="37dp"
+            android:entries="@array/location" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etl_search"
+            style="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            app:endIconDrawable="@drawable/ic_search"
+            app:endIconMode="custom"
+            app:hintEnabled="false">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_search"
+                style="@style/SearchTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="@string/what_are_you_looking_for" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_phone"
+                    app:title="Phone" />
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_headphones"
+                    app:title="Headphones" />
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_game"
+                    app:title="Games" />
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_car"
+                    app:title="Cars" />
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_furniture"
+                    app:title="Furniture" />
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_kid"
+                    app:title="kids" />
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_phone"
+                    app:title="Phone" />
+
+                <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="6dp"
+                    app:image="@drawable/ic_phone"
+                    app:title="Phone" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="11dp">
+
+            <TextView
+                style="@style/MainTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/latest" />
+
+            <TextView
+                style="@style/ViewAllTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:text="@string/view_all" />
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_latest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="11dp">
+
+            <TextView
+                style="@style/MainTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/flash_sale" />
+
+            <TextView
+                style="@style/ViewAllTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:text="@string/view_all" />
+
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_flash_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_flash_sale" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                style="@style/MainTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/brands" />
+
+            <TextView
+                style="@style/ViewAllTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:text="@string/view_all" />
+
+        </FrameLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">OnlineShopSatriaAdhiPradana</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_apple">Sign in with Apple</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="chat">chat</string>
+    <string name="man">man</string>
+    <string name="cart">cart</string>
+    <string name="heart">heart</string>
+    <string name="home">home</string>
+    <string name="trade_by_bata">Trade by bata</string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="phones">Phones</string>
+    <string name="view_all">View all</string>
+    <string name="latest">Latest</string>
+    <string name="flash_sale">Flash Sale</string>
+    <string name="brands">Brands</string>
+    <string name="favourite">favourite</string>
+    <string name="profile">profile</string>
+
+    <string-array name="location">
+        <item>Location</item>
+    </string-array>
+
 </resources>

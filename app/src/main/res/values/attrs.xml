@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CarouselItemView">
+        <attr name="image" format="integer" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileItemView">
+        <attr name="profileImage" format="integer" />
+        <attr name="profileTitle" format="string" />
+        <attr name="cash" format="string" />
+        <attr name="arrowRight" format="integer" />
+    </declare-styleable>
+</resources>

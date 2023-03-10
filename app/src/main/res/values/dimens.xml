@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="selected_image_width">83dp</dimen>
+    <dimen name="selected_image_height">45dp</dimen>
+
+    <dimen name="unselected_image_width">66dp</dimen>
+    <dimen name="unselected_image_height">38dp</dimen>
+
+</resources>

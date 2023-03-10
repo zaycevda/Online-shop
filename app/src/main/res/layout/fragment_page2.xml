@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.presentation.page_2.Page2Fragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_page2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="21dp"
+        android:background="@color/gray1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_photos"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        app:layout_constraintTop_toBottomOf="@id/tb_page2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vp_photos"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_photo" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/rv_photo">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Page2NameTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="72dp"
+            tools:text="New balance Sneakers" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/Page2PriceTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="24dp"
+            tools:text="$ 22,50" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/Page2HintTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame_layout"
+        tools:text="Features waterproof, fire, air resistant shoes. all changed when the country of fire attacked" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_description">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            style="@style/Page2RatingTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            tools:text="3.9" />
+
+        <TextView
+            android:id="@+id/tv_number_of_reviews"
+            style="@style/Page2HintTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            tools:text="(4000 reviews)" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_color"
+        style="@style/Page2ColorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="13dp"
+        android:text="Color:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_color"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_color" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_blue"
+        app:cardCornerRadius="35dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                style="@style/Page2HintTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity: " />
+
+            <Button
+                android:id="@+id/btn_minus"
+                style="@style/MiniButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_quantity"
+                android:layout_marginTop="10dp"
+                android:text="—" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                style="@style/CountTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_quantity"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="13dp"
+                android:layout_toEndOf="@id/btn_minus"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                style="@style/MiniButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_quantity"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tv_count"
+                android:text="+" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_result_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/btn_minus"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/purple_500"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="29dp"
+                    android:layout_marginVertical="17dp">
+
+                    <TextView
+                        android:id="@+id/tv_result_price"
+                        style="@style/ResultPriceTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.0" />
+
+                    <TextView
+                        style="@style/AddToCardTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_toEndOf="@id/tv_result_price"
+                        android:text="ADD TO CART" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

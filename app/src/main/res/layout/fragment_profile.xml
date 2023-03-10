@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.presentation.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="@color/gray1"
+            app:elevation="0dp">
+
+            <Toolbar
+                android:id="@+id/tb_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:navigationIcon="@drawable/ic_arrow_back">
+
+                <TextView
+                    style="@style/ProfileTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Profile" />
+            </Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:padding="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/satria_adhi_pradana"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:strokeColor="@color/gray7"
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/tv_change_avatar"
+            style="@style/ChangePhotoTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="Change photo" />
+
+        <TextView
+            style="@style/ProfileNameTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:text="Satria Adhi Pradana" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Upload item"
+            app:icon="@drawable/ic_share"
+            app:iconGravity="textStart"
+            app:iconPadding="14dp" />
+
+        <com.example.onlineshopsatriaadhipradana.app.presentation.view.ProfileItemView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="14dp"
+            app:arrowRight="@drawable/ic_arrow_right"
+            app:profileImage="@drawable/ic_card"
+            app:profileTitle="Trade store" />
+
+        <com.example.onlineshopsatriaadhipradana.app.presentation.view.ProfileItemView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="25dp"
+            app:arrowRight="@drawable/ic_arrow_right"
+            app:profileImage="@drawable/ic_card"
+            app:profileTitle="Payment method" />
+
+        <com.example.onlineshopsatriaadhipradana.app.presentation.view.ProfileItemView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="25dp"
+            app:cash="$ 1593"
+            app:profileImage="@drawable/ic_card"
+            app:profileTitle="Balance" />
+
+        <com.example.onlineshopsatriaadhipradana.app.presentation.view.ProfileItemView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="25dp"
+            app:arrowRight="@drawable/ic_arrow_right"
+            app:profileImage="@drawable/ic_card"
+            app:profileTitle="Trade history" />
+
+        <com.example.onlineshopsatriaadhipradana.app.presentation.view.ProfileItemView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="25dp"
+            app:arrowRight="@drawable/ic_arrow_right"
+            app:profileImage="@drawable/ic_restore"
+            app:profileTitle="Restore Purchase" />
+
+        <com.example.onlineshopsatriaadhipradana.app.presentation.view.ProfileItemView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="25dp"
+            app:profileImage="@drawable/ic_help"
+            app:profileTitle="Help" />
+
+        <com.example.onlineshopsatriaadhipradana.app.presentation.view.ProfileItemView
+            android:id="@+id/btn_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="14dp"
+            app:profileImage="@drawable/ic_log_in"
+            app:profileTitle="Log out" />
+
+    </LinearLayout>
+</ScrollView>
