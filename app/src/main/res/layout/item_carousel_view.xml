@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:parentTag="android.widget.RelativeLayout">
 
-    <ImageView
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/image"
-        android:layout_width="50dp"
-        android:layout_height="46dp"
-        tools:src="@drawable/ic_phone" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray3"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        tools:src="@drawable/ic_card" />
 
     <TextView
         android:id="@+id/title"

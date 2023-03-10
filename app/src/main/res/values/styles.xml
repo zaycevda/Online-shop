@@ -158,7 +158,7 @@
     </style>
 
     <style name="ButtonStyle">
-        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:background">@drawable/ripple_button</item>
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:layout_marginEnd">43dp</item>
         <item name="android:layout_marginStart">43dp</item>
@@ -169,7 +169,7 @@
     </style>
 
     <style name="MiniButtonStyle">
-        <item name="android:background">@drawable/bg_button_mini</item>
+        <item name="android:background">@drawable/ripple_button_mini</item>
         <item name="android:backgroundTint">@color/purple_500</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">50dp</item>

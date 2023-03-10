@@ -7,6 +7,7 @@
     android:layout_height="42dp"
     android:layout_marginEnd="4dp"
     android:elevation="0dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
     app:cardCornerRadius="6dp">
 
     <ImageView

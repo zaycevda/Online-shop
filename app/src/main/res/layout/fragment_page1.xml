@@ -2,6 +2,7 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_page1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -110,7 +111,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="6dp"
-                    app:image="@drawable/ic_game"
+                    app:image="@drawable/ic_gamepad"
                     app:title="Games" />
 
                 <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
@@ -126,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="6dp"
-                    app:image="@drawable/ic_furniture"
+                    app:image="@drawable/ic_bed"
                     app:title="Furniture" />
 
                 <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView
@@ -134,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="6dp"
-                    app:image="@drawable/ic_kid"
+                    app:image="@drawable/ic_toy"
                     app:title="kids" />
 
                 <com.example.onlineshopsatriaadhipradana.app.presentation.view.CarouselItemView

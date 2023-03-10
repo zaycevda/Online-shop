@@ -6,6 +6,7 @@
     android:layout_height="243dp"
     android:layout_marginHorizontal="6dp"
     android:elevation="0dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
     app:cardCornerRadius="11dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
